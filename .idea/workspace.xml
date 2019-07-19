@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34069142-b65f-4e6c-9256-fb214a7b4909" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="DepsLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="C:/repo/kermit" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/async_api_with_aleph/core.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-390">
+              <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Post</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/src/async_api_with_aleph/core.clj" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Documents/Tools/maven/apache-maven-3.6.0" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1379" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="async-api-with-aleph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="async-api-with-aleph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="async-api-with-aleph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="async-api-with-aleph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="async-api-with-aleph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="async-api-with-aleph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="async_api_with_aleph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="async-api-with-aleph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings sdk-home="C:/Program Files/Python37/python.exe">
+        <option name="mySdkHome" value="C:/Program Files/Python37/python.exe" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="ReplState" timestamp="1563537311028">{:repl-history {:ide [], :local [{:command &quot;(ns async-api-with-aleph.core\n  (:require\n    [aleph.http :as http]\n    [clojure.core.async :refer [go chan timeout]]))&quot;, :offset 119, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(http/get \&quot;google.com\&quot;)&quot;, :offset 23, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(http/get \&quot;https://google.com\&quot;)&quot;, :offset 31, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(-&gt; (http/get \&quot;https://google.com\&quot;)\n    type)&quot;, :offset 45, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(-&gt; @(http/get \&quot;https://google.com\&quot;))&quot;, :offset 37, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(ns async-api-with-aleph.core\n  (:require\n    [aleph.http :as http]\n    [clojure.core.async :refer [go chan timeout]]\n    [cheshire.core :as json]))&quot;, :offset 148, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(json/generate-string \&quot;{\\n   \\\&quot;currency\\\&quot;: \\\&quot;USD\\\&quot;,\\n   \\\&quot;posId\\\&quot;: \\\&quot;hbg3h7rf28\\\&quot;,\\n   \\\&quot;orderBy\\\&quot;: \\\&quot;price asc, rating desc\\\&quot;,\\n   \\\&quot;roomOccupancies\\\&quot;: [\\n      {\\n         \\\&quot;occupants\\\&quot;: [\\n            {\\n               \\\&quot;type\\\&quot;: \\\&quot;Adult\\\&quot;,\\n               \\\&quot;age\\\&quot;: 25\\n            }\\n         ]\\n      }\\n   ],\\n   \\\&quot;stayPeriod\\\&quot;: {\\n      \\\&quot;start\\\&quot;: \\\&quot;2019-08-18\\\&quot;,\\n      \\\&quot;end\\\&quot;: \\\&quot;2019-08-21\\\&quot;\\n   },\\n   \\\&quot;filters\\\&quot;: {\\n      \\\&quot;minHotelPrice\\\&quot;: 1,\\n      \\\&quot;maxHotelPrice\\\&quot;: 10000,\\n      \\\&quot;minHotelRating\\\&quot;: 1,\\n      \\\&quot;maxHotelRating\\\&quot;: 5,\\n      \\\&quot;hotelChains\\\&quot;: [\\n         \\\&quot;Novotel\\\&quot;,\\n         \\\&quot;Marriott\\\&quot;,\\n         \\\&quot;Hilton\\\&quot;,\\n         \\\&quot;Accor\\\&quot;\\n      ],\\n      \\\&quot;allowedCountry\\\&quot;: \\\&quot;FR\\\&quot;\\n   },\\n   \\\&quot;travellerCountryCodeOfResidence\\\&quot;: \\\&quot;US\\\&quot;,\\n   \\\&quot;travellerNationalityCode\\\&quot;: \\\&quot;US\\\&quot;,\\n   \\\&quot;includeHotelsWithoutRates\\\&quot;: false,\\n   \\\&quot;bounds\\\&quot;: {\\n      \\\&quot;rectangle\\\&quot;: {\\n         \\\&quot;topLeft\\\&quot;: {\\n            \\\&quot;lat\\\&quot;: 49.014173,\\n            \\\&quot;long\\\&quot;: 2.300387\\n         },\\n         \\\&quot;bottomRight\\\&quot;: {\\n            \\\&quot;lat\\\&quot;: 48.804093,\\n            \\\&quot;long\\\&quot;: 2.639246\\n         }\\n      }\\n   }\\n}\&quot;)&quot;, :offset 1118, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(json/parse-string \&quot;{\\n   \\\&quot;currency\\\&quot;: \\\&quot;USD\\\&quot;,\\n   \\\&quot;posId\\\&quot;: \\\&quot;hbg3h7rf28\\\&quot;,\\n   \\\&quot;orderBy\\\&quot;: \\\&quot;price asc, rating desc\\\&quot;,\\n   \\\&quot;roomOccupancies\\\&quot;: [\\n      {\\n         \\\&quot;occupants\\\&quot;: [\\n            {\\n               \\\&quot;type\\\&quot;: \\\&quot;Adult\\\&quot;,\\n               \\\&quot;age\\\&quot;: 25\\n            }\\n         ]\\n      }\\n   ],\\n   \\\&quot;stayPeriod\\\&quot;: {\\n      \\\&quot;start\\\&quot;: \\\&quot;2019-08-18\\\&quot;,\\n      \\\&quot;end\\\&quot;: \\\&quot;2019-08-21\\\&quot;\\n   },\\n   \\\&quot;filters\\\&quot;: {\\n      \\\&quot;minHotelPrice\\\&quot;: 1,\\n      \\\&quot;maxHotelPrice\\\&quot;: 10000,\\n      \\\&quot;minHotelRating\\\&quot;: 1,\\n      \\\&quot;maxHotelRating\\\&quot;: 5,\\n      \\\&quot;hotelChains\\\&quot;: [\\n         \\\&quot;Novotel\\\&quot;,\\n         \\\&quot;Marriott\\\&quot;,\\n         \\\&quot;Hilton\\\&quot;,\\n         \\\&quot;Accor\\\&quot;\\n      ],\\n      \\\&quot;allowedCountry\\\&quot;: \\\&quot;FR\\\&quot;\\n   },\\n   \\\&quot;travellerCountryCodeOfResidence\\\&quot;: \\\&quot;US\\\&quot;,\\n   \\\&quot;travellerNationalityCode\\\&quot;: \\\&quot;US\\\&quot;,\\n   \\\&quot;includeHotelsWithoutRates\\\&quot;: false,\\n   \\\&quot;bounds\\\&quot;: {\\n      \\\&quot;rectangle\\\&quot;: {\\n         \\\&quot;topLeft\\\&quot;: {\\n            \\\&quot;lat\\\&quot;: 49.014173,\\n            \\\&quot;long\\\&quot;: 2.300387\\n         },\\n         \\\&quot;bottomRight\\\&quot;: {\\n            \\\&quot;lat\\\&quot;: 48.804093,\\n            \\\&quot;long\\\&quot;: 2.639246\\n         }\\n      }\\n   }\\n}\&quot;)&quot;, :offset 1115, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(json/parse-string \&quot;{\\n   \\\&quot;currency\\\&quot;: \\\&quot;USD\\\&quot;,\\n   \\\&quot;posId\\\&quot;: \\\&quot;hbg3h7rf28\\\&quot;,\\n   \\\&quot;orderBy\\\&quot;: \\\&quot;price asc, rating desc\\\&quot;,\\n   \\\&quot;roomOccupancies\\\&quot;: [\\n      {\\n         \\\&quot;occupants\\\&quot;: [\\n            {\\n               \\\&quot;type\\\&quot;: \\\&quot;Adult\\\&quot;,\\n               \\\&quot;age\\\&quot;: 25\\n            }\\n         ]\\n      }\\n   ],\\n   \\\&quot;stayPeriod\\\&quot;: {\\n      \\\&quot;start\\\&quot;: \\\&quot;2019-08-18\\\&quot;,\\n      \\\&quot;end\\\&quot;: \\\&quot;2019-08-21\\\&quot;\\n   },\\n   \\\&quot;filters\\\&quot;: {\\n      \\\&quot;minHotelPrice\\\&quot;: 1,\\n      \\\&quot;maxHotelPrice\\\&quot;: 10000,\\n      \\\&quot;minHotelRating\\\&quot;: 1,\\n      \\\&quot;maxHotelRating\\\&quot;: 5,\\n      \\\&quot;hotelChains\\\&quot;: [\\n         \\\&quot;Novotel\\\&quot;,\\n         \\\&quot;Marriott\\\&quot;,\\n         \\\&quot;Hilton\\\&quot;,\\n         \\\&quot;Accor\\\&quot;\\n      ],\\n      \\\&quot;allowedCountry\\\&quot;: \\\&quot;FR\\\&quot;\\n   },\\n   \\\&quot;travellerCountryCodeOfResidence\\\&quot;: \\\&quot;US\\\&quot;,\\n   \\\&quot;travellerNationalityCode\\\&quot;: \\\&quot;US\\\&quot;,\\n   \\\&quot;includeHotelsWithoutRates\\\&quot;: false,\\n   \\\&quot;bounds\\\&quot;: {\\n      \\\&quot;rectangle\\\&quot;: {\\n         \\\&quot;topLeft\\\&quot;: {\\n            \\\&quot;lat\\\&quot;: 49.014173,\\n            \\\&quot;long\\\&quot;: 2.300387\\n         },\\n         \\\&quot;bottomRight\\\&quot;: {\\n            \\\&quot;lat\\\&quot;: 48.804093,\\n            \\\&quot;long\\\&quot;: 2.639246\\n         }\\n      }\\n   }\\n}\&quot; keyword)&quot;, :offset 1123, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn init []\n  (http/post \n             \&quot;https://public-be.oski.io/hotel/v1.0/search/init\&quot; \n             {:headers request-header\n              :body init-request-body}))&quot;, :offset 171, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn init []\n  @(http/post\n             \&quot;https://public-be.oski.io/hotel/v1.0/search/init\&quot;\n             {:headers request-header\n              :body init-request-body}))&quot;, :offset 170, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn init []\n  @(http/post\n             \&quot;https://public-be.oski.io/hotel/v1.0/search/init\&quot;\n             {:headers request-header\n              :body (json/parse-string init-request-body)}))&quot;, :offset 190, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn init []\n  @(http/post\n             \&quot;https://public-be.oski.io/hotel/v1.0/search/init\&quot;\n             {:headers request-header\n              :body (json/generate-string init-request-body)}))&quot;, :offset 193, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(ns async-api-with-aleph.core\n  (:require\n    [aleph.http :as http]\n    [clojure.core.async :refer [go chan timeout]]\n    [cheshire.core :as json]\n    [byte-streams :as bs]))&quot;, :offset 174, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn init []\n  (-&gt; @(http/post\n             \&quot;https://public-be.oski.io/hotel/v1.0/search/init\&quot;\n             {:headers request-header\n              :body (json/generate-string init-request-body)})\n      :body\n      bs/to-string\n      ))&quot;, :offset 236, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn init []\n  (-&gt; @(http/post\n             \&quot;https://public-be.oski.io/hotel/v1.0/search/init\&quot;\n             {:headers request-header\n              :body (json/generate-string init-request-body)})\n      :body\n      bs/to-string\n      (json/parse-string keyword)\n      ))&quot;, :offset 270, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(init)&quot;, :offset 6, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-status-check-api [request-body]\n  (-&gt; @(http/post\n         \&quot;https://public-be.oski.io/hotel/v1.0/search/status\&quot;\n         {:headers request-header\n          :body    (json/generate-string request-body)})\n      :body)\n  )&quot;, :offset 232, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-status-check-api [request-body]\n  (-&gt; @(http/post\n         \&quot;https://public-be.oski.io/hotel/v1.0/search/status\&quot;\n         {:headers request-header\n          :body    (json/generate-string request-body)})\n      :body\n      bs/to-string)\n  )&quot;, :offset 251, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-status-check-api [request-body]\n  (-&gt; @(http/post\n         \&quot;https://public-be.oski.io/hotel/v1.0/search/status\&quot;\n         {:headers request-header\n          :body    (json/generate-string request-body)})\n      :body\n      bs/to-string\n      (json/parse-string keyword))\n  )&quot;, :offset 285, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(invoke-status-check-api {:sessionId \&quot;39acc88b-3608-43c7-b069-53ded3c000aa\&quot;})&quot;, :offset 77, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(json/parse-string \&quot;{\\n   \\\&quot;sessionId\\\&quot;: \\\&quot;0f8fad5b-d9cb-461f-a165-70867728951z\\\&quot;,\\n   \\\&quot;paging\\\&quot;: {\\n      \\\&quot;pageNo\\\&quot;: 1,\\n      \\\&quot;pageSize\\\&quot;: 10,\\n      \\\&quot;orderBy\\\&quot;: \\\&quot;price asc, rating desc\\\&quot;\\n   },\\n   \\\&quot;optionalDataPrefs\\\&quot;: [\\n      \\\&quot;All\\\&quot;\\n   ],\\n   \\\&quot;currency\\\&quot;: \\\&quot;USD\\\&quot;,\\n   \\\&quot;contentPrefs\\\&quot;: [\\n      \\\&quot;Basic\\\&quot;,\\n      \\\&quot;Activities\\\&quot;,\\n      \\\&quot;Amenities\\\&quot;,\\n      \\\&quot;Policies\\\&quot;,\\n      \\\&quot;AreaAttractions\\\&quot;,\\n      \\\&quot;Descriptions\\\&quot;,\\n      \\\&quot;Images\\\&quot;,\\n      \\\&quot;CheckinCheckoutPolicy\\\&quot;,\\n      \\\&quot;All\\\&quot;\\n   ],\\n   \\\&quot;filters\\\&quot;: {\\n      \\\&quot;minHotelPrice\\\&quot;: 1,\\n      \\\&quot;maxHotelPrice\\\&quot;: 10000,\\n      \\\&quot;minHotelRating\\\&quot;: 1,\\n      \\\&quot;maxHotelRating\\\&quot;: 5,\\n      \\\&quot;hotelChains\\\&quot;: [\\n         \\\&quot;Novotel\\\&quot;,\\n         \\\&quot;Marriott\\\&quot;,\\n         \\\&quot;Hilton\\\&quot;,\\n         \\\&quot;Accor\\\&quot;\\n      ],\\n      \\\&quot;allowedCountry\\\&quot;: \\\&quot;FR\\\&quot;\\n   }\\n}\&quot; keyword)&quot;, :offset 834, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(merge {:1 a :2 b} {:3 c :d e})&quot;, :offset 31, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(merge {:1 \&quot;a\&quot; :2 \&quot;v\&quot;} {:3 \&quot;g\&quot; :d \&quot;d\&quot;})&quot;, :offset 39, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-search-hostel-api [sessionId]\n  (-&gt; @(http/post\n         \&quot;https://public-be.oski.io/hotel/v1.0/search/results\&quot;\n         {:headers request-header\n          :body (-&gt; (merge sessionId hostel-search-request-body)\n                    json/generate-string)\n          })\n      :body\n      bs/to-string\n      (json/parse-string keyword)))&quot;, :offset 344, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(def hotel-search-request-body {:paging            {:pageNo   1,\n                                                     :pageSize 10,\n                                                     :orderBy  \&quot;price asc, rating desc\&quot;},\n                                 :optionalDataPrefs [\&quot;All\&quot;],\n                                 :currency          \&quot;USD\&quot;,\n                                 :contentPrefs      [\&quot;Basic\&quot; \&quot;Activities\&quot; \&quot;Amenities\&quot; \&quot;Policies\&quot; \&quot;AreaAttractions\&quot; \&quot;Descriptions\&quot; \&quot;Images\&quot; \&quot;CheckinCheckoutPolicy\&quot; \&quot;All\&quot;],\n                                 :filters           {:minHotelPrice  1,\n                                                     :maxHotelPrice  10000,\n                                                     :minHotelRating 1,\n                                                     :maxHotelRating 5,\n                                                     :hotelChains    [\&quot;Novotel\&quot; \&quot;Marriott\&quot; \&quot;Hilton\&quot; \&quot;Accor\&quot;], :allowedCountry \&quot;FR\&quot;}})&quot;, :offset 938, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-search-hostel-api [sessionId]\n  (-&gt; (http/post\n         \&quot;https://public-be.oski.io/hotel/v1.0/search/results\&quot;\n         {:headers request-header\n          :body (-&gt; (merge sessionId hotel-search-request-body)\n                    json/generate-string)\n          })\n      :body\n      bs/to-string\n      (json/parse-string keyword)))&quot;, :offset 342, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-search-hostel-api [sessionId]\n  (-&gt; @(http/post\n         \&quot;https://public-be.oski.io/hotel/v1.0/search/results\&quot;\n         {:headers request-header\n          :body (-&gt; (merge sessionId hotel-search-request-body)\n                    json/generate-string)\n          })\n      :body\n      bs/to-string\n      (json/parse-string keyword)))&quot;, :offset 343, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(ns async-api-with-aleph.core\n  (:require\n    [aleph.http :as http]\n    [clojure.core.async :refer [go chan timeout]]\n    [cheshire.core :as json]\n    [manifold.deferred :as d]\n    [byte-streams :as bs]))&quot;, :offset 204, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-search-hostel-api [sessionId]\n  (d/chain (http/post\n         \&quot;https://public-be.oski.io/hotel/v1.0/search/results\&quot;\n         {:headers request-header\n          :body (-&gt; (merge sessionId hotel-search-request-body)\n                    json/generate-string)\n          })\n      :body\n      bs/to-string\n      (json/parse-string keyword)))&quot;, :offset 347, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-search-hotel-api [sessionId]\n  (d/chain (http/post\n         \&quot;https://public-be.oski.io/hotel/v1.0/search/results\&quot;\n         {:headers request-header\n          :body (-&gt; (merge sessionId hotel-search-request-body)\n                    json/generate-string)\n          })\n      :body\n      bs/to-string\n      (json/parse-string keyword)))&quot;, :offset 346, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(invoke-search-hostel-api {:sessionId \&quot;39acc88b-3608-43c7-b069-53ded3c000aa\&quot;})&quot;, :offset 78, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-search-hotel-api [sessionId]\n  (d/chain (http/post\n         \&quot;https://public-be.oski.io/hotel/v1.0/search/results\&quot;\n         {:headers request-header\n          :body (-&gt; (merge sessionId hotel-search-request-body)\n                    json/generate-string)\n          })\n      :body\n      bs/to-string \n           json/parse-string))&quot;, :offset 342, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(invoke-search-hotel-api {:sessionId \&quot;39acc88b-3608-43c7-b069-53ded3c000aa\&quot;})&quot;, :offset 77, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;@*1&quot;, :offset 3, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn handler [req]\n  (hash-map req)\n  (-&gt; (invoke-init-api)\n      invoke-status-check-api\n      invoke-search-hotel-api))&quot;, :offset 122, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(http/get \&quot;localhost:9876\&quot;)&quot;, :offset 25, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(http/get \&quot;http://localhost:9876\&quot;)&quot;, :offset 18, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn invoke-search-hotel-api [sessionId]\n  (-&gt; @(http/post\n             \&quot;https://public-be.oski.io/hotel/v1.0/search/results\&quot;\n             {:headers request-header\n              :body    (-&gt; (merge sessionId hotel-search-request-body)\n                           json/generate-string)\n              })\n           :body\n           bs/to-string))&quot;, :offset 344, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn handler []\n  (-&gt; (invoke-init-api)\n      invoke-search-hotel-api))&quot;, :offset 72, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn handler []\n  (invoke-init-api))&quot;, :offset 37, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn handler []\n  (invoke-search-hotel-api {:sessionId \&quot;2419b6c5-4334-48a8-90c9-7e3e81133211\&quot;}))&quot;, :offset 97, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(invoke-status-check-api {:sessionId \&quot;2419b6c5-4334-48a8-90c9-7e3e81133211\&quot;})&quot;, :offset 76, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(ns async-api-with-aleph.core\n  (:require\n    [aleph.http :as http]\n    [clojure.core.async :refer [go chan timeout]]\n    [cheshire.core :as json]\n    [manifold.deferred :as d]\n    [byte-streams :as bs]\n    [clojure.core.async :refer [go go-loop &lt;! &gt;! timeout]]))&quot;, :offset 263, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn handler []\n  (let [sessionId (invoke-init-api)\n        channel (timeout 5000)]\n    (go-loop [status \&quot;InProgress\&quot;]\n      (if (= status \&quot;Complete\&quot;)\n        (&gt;! timeout \&quot;ready\&quot;)\n        (recur (-&gt; (invoke-status-check-api sessionId)\n                   :status))))\n    (go\n      (cond\n        (= \&quot;ready\&quot; (&lt;! timeout)) {:status 200\n                                  :headers {\&quot;content-type\&quot; \&quot;application/json\&quot;}\n                                  :body (invoke-search-hotel-api sessionId)}\n        (nil? (&lt;! timeout)) {:status 200\n                             :body \&quot;Timeout\&quot;})))\n  )&quot;, :offset 582, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn handler []\n  (let [sessionId (invoke-init-api)\n        channel (timeout 5000)]\n    (go-loop [status \&quot;InProgress\&quot;]\n      (if (= status \&quot;Complete\&quot;)\n        (&gt;! channel \&quot;ready\&quot;)\n        (recur (-&gt; (invoke-status-check-api sessionId)\n                   :status))))\n    (go\n      (cond\n        (= \&quot;ready\&quot; (&lt;! timeout)) {:status 200\n                                  :headers {\&quot;content-type\&quot; \&quot;application/json\&quot;}\n                                  :body (invoke-search-hotel-api sessionId)}\n        (nil? (&lt;! channel)) {:status 200\n                             :body \&quot;Timeout\&quot;})))\n  )&quot;, :offset 582, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn handler []\n  (let [sessionId (invoke-init-api)\n        channel (timeout 5000)]\n    (go-loop [status \&quot;InProgress\&quot;]\n      (if (= status \&quot;Complete\&quot;)\n        (&gt;! channel \&quot;ready\&quot;)\n        (recur (-&gt; (invoke-status-check-api sessionId)\n                   :status))))\n    (go\n      (cond\n        (= \&quot;ready\&quot; (&lt;! channel)) {:status 200\n                                  :headers {\&quot;content-type\&quot; \&quot;application/json\&quot;}\n                                  :body (invoke-search-hotel-api sessionId)}\n        (nil? (&lt;! channel)) {:status 200\n                             :body \&quot;Timeout\&quot;})))\n  )&quot;, :offset 582, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(handler)&quot;, :offset 9, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn- intiate-request [target-chan]\n  (let [sessionId (invoke-init-api)\n        channel (timeout 5000)]\n    (go-loop [status \&quot;InProgress\&quot;]\n      (if (= status \&quot;Complete\&quot;)\n        (&gt;! channel \&quot;ready\&quot;)\n        (recur (-&gt; (invoke-status-check-api sessionId)\n                   :status))))\n    (go\n      (cond\n        (= \&quot;ready\&quot; (&lt;! channel)) (&gt;! target-chan {:status 200\n                                  :headers {\&quot;content-type\&quot; \&quot;application/json\&quot;}\n                                  :body (invoke-search-hotel-api sessionId)})\n        (nil? (&lt;! channel)) (&gt;! target-chan {:status 200\n                             :body \&quot;Timeout\&quot;}))))\n  )&quot;, :offset 636, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(def c1 (chan))&quot;, :offset 15, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(go \n  (&lt;! chan))&quot;, :offset 17, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(go \n  (&lt;! c1))&quot;, :offset 15, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;@(go \n  (&lt;! c1))&quot;, :offset 16, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(http/start-server handler {:port 9876})&quot;, :offset 40, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn- initiate-request [target-chan]\n  (let [sessionId (invoke-init-api)\n        channel (timeout 5000)]\n    (go-loop [status \&quot;InProgress\&quot;]\n      (if (= status \&quot;Complete\&quot;)\n        (&gt;! channel \&quot;ready\&quot;)\n        (recur (-&gt; (invoke-status-check-api sessionId)\n                   :status))))\n    (go\n      (cond\n        (= \&quot;ready\&quot; (&lt;! channel)) (&gt;! target-chan {:status 200\n                                  :headers {\&quot;content-type\&quot; \&quot;application/json\&quot;}\n                                  :body (invoke-search-hotel-api sessionId)})\n        (nil? (&lt;! channel)) (&gt;! target-chan {:status 200\n                             :body \&quot;Timeout\&quot;}))))\n  )&quot;, :offset 637, :ns &quot;async-api-with-aleph.core&quot;} {:command &quot;(defn- initiate-request [target-chan]\n  (let [sessionId (invoke-init-api)\n        channel (timeout 10000)]\n    (go-loop [status \&quot;InProgress\&quot;]\n      (if (= status \&quot;Complete\&quot;)\n        (&gt;! channel \&quot;ready\&quot;)\n        (recur (-&gt; (invoke-status-check-api sessionId)\n                   :status))))\n    (go\n      (cond\n        (= \&quot;ready\&quot; (&lt;! channel)) (&gt;! target-chan {:status 200\n                                  :headers {\&quot;content-type\&quot; \&quot;application/json\&quot;}\n                                  :body (invoke-search-hotel-api sessionId)})\n        (nil? (&lt;! channel)) (&gt;! target-chan {:status 200\n                             :body \&quot;Timeout\&quot;}))))\n  )&quot;, :offset 638, :ns &quot;async-api-with-aleph.core&quot;}], :remote []}}</component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <module name="" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="0" />
+      <module name="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nRepl" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <module name="async-api-with-aleph" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34069142-b65f-4e6c-9256-fb214a7b4909" name="Default Changelist" comment="" />
+      <created>1563518851679</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563518851679</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="1379" height="728" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="Designer" order="1" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.12490816" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="right" id="RestServices" order="0" />
+      <window_info anchor="right" id="Leiningen" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="JSON Viewer" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info active="true" anchor="right" id="REPL" order="6" side_tool="true" visible="true" weight="0.33798677" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/aleph/aleph/0.4.6/aleph-0.4.6.jar!/aleph/http.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="357" column="43" selection-start-line="357" selection-start-column="37" selection-end-line="357" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/core.async/0.4.500/core.async-0.4.500.jar!/clojure/core/async.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/manifold/manifold/0.1.8/manifold-0.1.8.jar!/manifold/stream.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/manifold/manifold/0.1.8/manifold-0.1.8.jar!/manifold/deferred.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="907" column="6" selection-start-line="907" selection-start-column="6" selection-end-line="907" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/async_api_with_aleph/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>app-2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
