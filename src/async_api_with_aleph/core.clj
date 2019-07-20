@@ -46,27 +46,27 @@
 
 
 (defn invoke-init-api []
-  (-> @(http/post
-         "https://public-be.oski.io/hotel/v1.0/search/init"
-         {:headers request-header
-          :body    (json/generate-string init-request-body)})
-      :body
-      bs/to-string
-      (json/parse-string keyword)
-      ))
+  (d/chain (http/post
+             "https://public-be.oski.io/hotel/v1.0/search/init"
+             {:headers request-header
+              :body    (json/generate-string init-request-body)})
+           :body
+           bs/to-string
+           #(json/parse-string % keyword)
+           ))
 
 (defn invoke-status-check-api [request-body]
-  (-> @(http/post
-         "https://public-be.oski.io/hotel/v1.0/search/status"
-         {:headers request-header
-          :body    (json/generate-string request-body)})
-      :body
-      bs/to-string
-      (json/parse-string keyword))
+  (d/chain (http/post
+             "https://public-be.oski.io/hotel/v1.0/search/status"
+             {:headers request-header
+              :body    (json/generate-string request-body)})
+           :body
+           bs/to-string
+           #(json/parse-string % keyword))
   )
 
 (defn invoke-search-hotel-api [sessionId]
-  (-> @(http/post
+  (d/chain (http/post
              "https://public-be.oski.io/hotel/v1.0/search/results"
              {:headers request-header
               :body    (-> (merge sessionId hotel-search-request-body)
@@ -76,20 +76,20 @@
            bs/to-string))
 
 (defn- initiate-request [target-chan]
-  (let [sessionId (invoke-init-api)
+  (let [sessionId @(invoke-init-api)
         channel (timeout 10000)]
     (go-loop [status "InProgress"]
       (if (= status "Complete")
         (>! channel "ready")
-        (recur (-> (invoke-status-check-api sessionId)
+        (recur (-> @(invoke-status-check-api sessionId)
                    :status))))
     (go
       (cond
-        (= "ready" (<! channel)) (>! target-chan {:status 200
-                                  :headers {"content-type" "application/json"}
-                                  :body (invoke-search-hotel-api sessionId)})
+        (= "ready" (<! channel)) (>! target-chan {:status  200
+                                                  :headers {"content-type" "application/json"}
+                                                  :body    @(invoke-search-hotel-api sessionId)})
         (nil? (<! channel)) (>! target-chan {:status 200
-                             :body "Timeout"}))))
+                                             :body   "Timeout"}))))
   )
 
 (defn handler [req]
