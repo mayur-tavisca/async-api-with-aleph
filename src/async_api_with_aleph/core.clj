@@ -44,6 +44,13 @@
 (def request-header {:oski-tenantId "Demo"
                      :Content-Type  "application/json"})
 
+(defn prepare-response [status response]
+  {:status  status
+   :headers {"content-type" "application/json"}
+   :body    response})
+
+(def terminating-statuses #{"Complete" "Error" "Timeout"})
+
 
 (defn invoke-init-api []
   (d/chain (http/post
@@ -62,43 +69,74 @@
               :body    (json/generate-string request-body)})
            :body
            bs/to-string
-           #(json/parse-string % keyword))
-  )
+           #(json/parse-string % keyword)
+           :status))
 
 (defn invoke-search-hotel-api [sessionId]
   (d/chain (http/post
              "https://public-be.oski.io/hotel/v1.0/search/results"
              {:headers request-header
               :body    (-> (merge sessionId hotel-search-request-body)
-                           json/generate-string)
-              })
+                           json/generate-string)})
            :body
            bs/to-string))
 
-(defn- initiate-request [target-chan]
-  (let [sessionId @(invoke-init-api)
-        channel (timeout 10000)]
-    (go-loop [status "InProgress"]
-      (if (= status "Complete")
-        (>! channel "ready")
-        (recur (-> @(invoke-status-check-api sessionId)
-                   :status))))
+(defn check-hotel-search-status [status-atom session-id timeout-chan]
+  (go-loop [status @status-atom status-check-deferred (invoke-status-check-api session-id)]
+    (if (terminating-statuses status)
+      (do
+        (println "go-loop terminates with status " status)
+        (>! timeout-chan status))
+      (recur (do (<! (timeout 1000))
+                 (d/on-realized status-check-deferred
+                                (fn [status]
+                                  (when-not (= @status-atom "Timeout")
+                                    (reset! status-atom status)))
+                                (fn [error]
+                                  (println "error occurred:" error)
+                                  (reset! status-atom "Error")))
+                 (println "inside recur " @status-atom)
+                 (deref status-atom)) (invoke-status-check-api session-id)))))
+
+(defn initiate-request [target-chan]
+  (let [timeout-chan (timeout 10000)
+        sessionId (atom {})
+        init-deferred (invoke-init-api)
+        status-atom (atom "Not-Started")]
+
+    (d/on-realized init-deferred
+                   (fn [session-id]
+                     (reset! sessionId session-id)
+                     (check-hotel-search-status status-atom session-id timeout-chan))
+                   (fn [error]
+                     (println "error occurred on realizing init. Error: " error)
+                     (reset! status-atom "Error")
+                     ))
     (go
       (cond
-        (= "ready" (<! channel)) (>! target-chan {:status  200
-                                                  :headers {"content-type" "application/json"}
-                                                  :body    @(invoke-search-hotel-api sessionId)})
-        (nil? (<! channel)) (>! target-chan {:status 200
-                                             :body   "Timeout"}))))
-  )
+        (= "Complete" (<! timeout-chan)) (>! target-chan
+                                             (prepare-response 200 (invoke-search-hotel-api @sessionId)))
+        (nil? (<! timeout-chan)) (do
+                                   (reset! status-atom "Timeout")
+                                   (>! target-chan
+                                       (prepare-response 206 (invoke-search-hotel-api @sessionId))))
+
+        (= "Error" (<! timeout-chan)) (>! target-chan
+                                          (prepare-response 500 (invoke-search-hotel-api @sessionId)))))))
 
 (defn handler [req]
   (let [target-channel (chan)]
     (initiate-request target-channel)
-    (<!! target-channel))
-  )
+    (<!! target-channel)))
 
-(http/start-server handler {:port 9876})
+(defonce start-server (http/start-server #'handler {:port 9876}))
+
+
+
+
+
+
+
 
 
 
